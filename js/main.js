@@ -61,29 +61,49 @@ class Navigation {
     }
 
     // Observe sections pour active state
+    // ⚡ Approche scroll-based au lieu d'Intersection Observer pur
+    // Pourquoi ? Les sections longues (ex: Compétences) ne trigger pas
+    // correctement un threshold élevé. En calculant quelle section
+    // est la plus proche du centre du viewport, on obtient un résultat fiable.
     observeSections() {
-        const options = {
-            threshold: 0.3, // 30% de la section visible
-            rootMargin: '-100px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Remove active from all links
-                    this.navLinks.forEach(link => link.classList.remove('active'));
-
-                    // Add active to current section link
-                    const sectionId = entry.target.getAttribute('id');
-                    const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-                    if (activeLink) {
-                        activeLink.classList.add('active');
-                    }
+        const updateActiveLink = () => {
+            const scrollPosition = window.scrollY + window.innerHeight / 3;
+            
+            let currentSection = null;
+            
+            this.sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    currentSection = section.getAttribute('id');
                 }
             });
-        }, options);
-
-        this.sections.forEach(section => observer.observe(section));
+            
+            if (currentSection) {
+                this.navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        };
+        
+        // Throttle pour performance (16ms ≈ 60fps)
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateActiveLink();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        
+        // Initial check
+        updateActiveLink();
     }
 
     // Smooth scroll vers sections

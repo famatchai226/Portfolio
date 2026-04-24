@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio de Ibrahim Aboubacar Antoine KY - Développeur Fullstack spécialisé en JavaScript, React et Node.js">
+    <meta name="description"
+        content="Portfolio de Ibrahim Aboubacar Antoine KY - Développeur Fullstack spécialisé en JavaScript, React et Node.js">
     <meta name="keywords" content="développeur fullstack, JavaScript, React, Node.js, portfolio">
     <meta name="author" content="Ibrahim Aboubacar Antoine KY">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Ibrahim Aboubacar Antoine KY - Développeur Fullstack">
-    <meta property="og:description" content="Portfolio personnel - Développeur passionné par les expériences web modernes">
+    <meta property="og:description"
+        content="Portfolio personnel - Développeur passionné par les expériences web modernes">
     <meta property="og:type" content="website">
-    
+
     <title>Ibrahim Aboubacar Antoine KY - Développeur Fullstack</title>
-    
+
     <!-- Google Fonts - Inter pour une typo moderne 2026 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
     <!-- ============================================
          NAVIGATION
          Fixed navbar avec transitions fluides
@@ -35,9 +40,9 @@
         <div class="nav-container">
             <!-- Logo/Nom - Always visible -->
             <a href="#hero" class="nav-logo">
-                IBRAHIM<span class="accent">.</span>
+                M.KY<span class="accent"><-</span>
             </a>
-            
+
             <!-- Desktop Menu -->
             <ul class="nav-menu" id="navMenu">
                 <li class="nav-item">
@@ -53,7 +58,7 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            
+
             <!-- Hamburger Menu (Mobile) -->
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span class="hamburger-line"></span>
@@ -62,7 +67,7 @@
             </button>
         </div>
     </nav>
-    
+
     <!-- ============================================
          SECTION: HERO
          Effet parallaxe avec formes géométriques
@@ -76,7 +81,7 @@
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
         </div>
-        
+
         <!-- Hero Content (premier plan - vitesse 1.2x) -->
         <div class="hero-content" id="heroContent">
             <div class="hero-text">
@@ -90,11 +95,12 @@
                     Créateur d'expériences web modernes et performantes
                 </p>
             </div>
-            
+
             <!-- Call to Actions -->
             <div class="hero-cta">
                 <a href="assets/cv.pdf" class="btn btn-primary" download>
-                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -103,20 +109,21 @@
                 </a>
                 <a href="#projects" class="btn btn-secondary">
                     Voir mes projets
-                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
                         <line x1="5" y1="12" x2="19" y2="12"></line>
                         <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
                 </a>
             </div>
         </div>
-        
+
         <!-- Scroll Indicator -->
         <div class="scroll-indicator">
             <div class="scroll-line"></div>
         </div>
     </section>
-    
+
     <!-- ============================================
          SECTION: À PROPOS
          Fade in au scroll avec Intersection Observer
@@ -127,22 +134,23 @@
             <h2 class="section-title fade-in">
                 À propos<span class="accent">.</span>
             </h2>
-            
+
             <div class="about-content fade-in">
                 <p class="about-text">
-                    Salut ! Je suis <strong>IBRAHIM ANTOINE</strong>, développeur passionné actuellement en formation 
-                    en développement web full-stack. Je me spécialise dans la création d'expériences web modernes 
-                    et performantes avec <strong>JavaScript</strong>, <strong>React</strong> et <strong>Node.js</strong>.
+                    Salut ! Je suis <strong>IBRAHIM ANTOINE</strong>, développeur passionné actuellement en formation
+                    en développement web full-stack. Je me spécialise dans la création d'expériences web modernes
+                    et performantes avec <strong>JavaScript</strong>, <strong>React</strong> et
+                    <strong>Node.js</strong>.
                 </p>
                 <p class="about-text">
-                    Actuellement, j'apprends à maîtriser les architectures backend et l'optimisation des performances 
-                    front-end. Quand je ne code pas, je contribue à des projets open-source et j'explore les nouvelles 
+                    Actuellement, j'apprends à maîtriser les architectures backend et l'optimisation des performances
+                    front-end. Quand je ne code pas, je contribue à des projets open-source et j'explore les nouvelles
                     technologies web.
                 </p>
             </div>
         </div>
     </section>
-    
+
     <!-- ============================================
          SECTION: COMPÉTENCES
          Grid responsive avec hover effects
@@ -154,147 +162,286 @@
             <h2 class="section-title fade-in">
                 Compétences<span class="accent">.</span>
             </h2>
-            
+
             <!-- Frontend Skills -->
             <div class="skills-category fade-in">
                 <h3 class="category-title">Frontend</h3>
                 <div class="skills-grid">
+                    <!-- HTML/CSS - Chevrons de code classiques <> -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="14 12 4 24 14 36"></polyline>
+                                <polyline points="34 12 44 24 34 36"></polyline>
+                                <line x1="28" y1="8" x2="20" y2="40"></line>
                             </svg>
                         </div>
-                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-name">HTML / CSS</span>
                     </div>
-                    
+
+                    <!-- JavaScript - "JS" stylisé dans un carré arrondi -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor"
+                                    stroke-width="2.5" />
+                                <text x="24" y="32" text-anchor="middle" fill="currentColor"
+                                    font-family="Inter, sans-serif" font-weight="700" font-size="18">JS</text>
                             </svg>
                         </div>
                         <span class="skill-name">JavaScript</span>
                     </div>
-                    
+
+                    <!-- React - Atome (orbites elliptiques + noyau central) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 16v-4M12 8h.01"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="24" cy="24" r="4" fill="currentColor" />
+                                <ellipse cx="24" cy="24" rx="20" ry="8" />
+                                <ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(60 24 24)" />
+                                <ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(120 24 24)" />
                             </svg>
                         </div>
                         <span class="skill-name">React</span>
                     </div>
-                    
+
+                    <!-- Responsive Design - Écrans multiples (desktop + mobile) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="6" width="28" height="20" rx="2"></rect>
+                                <line x1="12" y1="30" x2="24" y2="30"></line>
+                                <line x1="18" y1="26" x2="18" y2="30"></line>
+                                <rect x="32" y="14" width="12" height="22" rx="2"></rect>
+                                <line x1="36" y1="32" x2="40" y2="32"></line>
                             </svg>
                         </div>
                         <span class="skill-name">Responsive Design</span>
                     </div>
+
+                    <!-- Flutter - Oiseau/aile stylisé (logo Flutter) -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M28 4 L8 24 L16 32 L36 12 Z"></path>
+                                <path d="M28 24 L16 36 L24 44 L36 32 Z"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Flutter</span>
+                    </div>
+
+                    <!-- Dart - Style target/flèche (Dart = fléchette) -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor"
+                                    stroke-width="2.5" />
+                                <text x="24" y="32" text-anchor="middle" fill="currentColor"
+                                    font-family="Inter, sans-serif" font-weight="700" font-size="14">Dart</text>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Dart</span>
+                    </div>
                 </div>
             </div>
-            
+
             <!-- Backend Skills -->
             <div class="skills-category fade-in">
                 <h3 class="category-title">Backend</h3>
                 <div class="skills-grid">
+                    <!-- Node.js - Hexagone (logo Node.js) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linejoin="round">
+                                <polygon points="24,4 42,14 42,34 24,44 6,34 6,14"></polygon>
+                                <text x="24" y="28" text-anchor="middle" fill="currentColor"
+                                    font-family="Inter, sans-serif" font-weight="700" font-size="12">N</text>
                             </svg>
                         </div>
                         <span class="skill-name">Node.js</span>
                     </div>
-                    
+
+                    <!-- MongoDB - Feuille (symbole emblématique Mongo) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M24 4 C24 4, 14 16, 14 28 C14 36, 18 42, 24 44 C30 42, 34 36, 34 28 C34 16, 24 4, 24 4z">
+                                </path>
+                                <line x1="24" y1="20" x2="24" y2="42"></line>
                             </svg>
                         </div>
                         <span class="skill-name">MongoDB</span>
                     </div>
-                    
+
+                    <!-- Express.js - "Ex" + flèches (routing) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                                <polyline points="13 2 13 9 20 9"></polyline>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 24 L44 24"></path>
+                                <polyline points="36 18 44 24 36 30"></polyline>
+                                <text x="20" y="18" text-anchor="middle" fill="currentColor"
+                                    font-family="Inter, sans-serif" font-weight="700" font-size="14">Ex</text>
                             </svg>
                         </div>
                         <span class="skill-name">Express.js</span>
                     </div>
-                    
+
+                    <!-- REST APIs - Connexions réseau (endpoints) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="10" cy="12" r="4"></circle>
+                                <circle cx="38" cy="12" r="4"></circle>
+                                <circle cx="10" cy="36" r="4"></circle>
+                                <circle cx="38" cy="36" r="4"></circle>
+                                <circle cx="24" cy="24" r="5"></circle>
+                                <line x1="14" y1="12" x2="19" y2="22"></line>
+                                <line x1="34" y1="12" x2="29" y2="22"></line>
+                                <line x1="14" y1="36" x2="19" y2="26"></line>
+                                <line x1="34" y1="36" x2="29" y2="26"></line>
                             </svg>
                         </div>
                         <span class="skill-name">REST APIs</span>
                     </div>
+
+                    <!-- MySQL - Cylindre de base de données avec "SQL" -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="24" cy="10" rx="16" ry="6"></ellipse>
+                                <path d="M8 10v28c0 3.3 7.2 6 16 6s16-2.7 16-6V10"></path>
+                                <path d="M8 24c0 3.3 7.2 6 16 6s16-2.7 16-6"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-name">MySQL</span>
+                    </div>
                 </div>
             </div>
-            
+
             <!-- Tools -->
             <div class="skills-category fade-in">
                 <h3 class="category-title">Outils</h3>
                 <div class="skills-grid">
+                    <!-- Git - Branches (graphe de versionning) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M12 1v6m0 6v6"></path>
-                                <path d="m4.2 4.2 4.2 4.2m5.2 5.2 4.2 4.2M1 12h6m6 0h6M4.2 19.8l4.2-4.2m5.2-5.2 4.2-4.2"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="10" r="4"></circle>
+                                <circle cx="18" cy="38" r="4"></circle>
+                                <circle cx="34" cy="18" r="4"></circle>
+                                <line x1="18" y1="14" x2="18" y2="34"></line>
+                                <path d="M18 14 C18 18, 30 14, 30 18"></path>
                             </svg>
                         </div>
                         <span class="skill-name">Git & GitHub</span>
                     </div>
-                    
+
+                    <!-- VS Code - Éditeur stylisé (crochets + curseur) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="9" y1="3" x2="9" y2="21"></line>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="6" y="6" width="36" height="36" rx="4"></rect>
+                                <line x1="16" y1="6" x2="16" y2="42"></line>
+                                <line x1="22" y1="16" x2="32" y2="16"></line>
+                                <line x1="22" y1="24" x2="36" y2="24"></line>
+                                <line x1="22" y1="32" x2="28" y2="32"></line>
                             </svg>
                         </div>
                         <span class="skill-name">VS Code</span>
                     </div>
-                    
+
+                    <!-- Vercel - Triangle (logo Vercel) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <polygon points="24,6 44,40 4,40" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <span class="skill-name">Vercel</span>
                     </div>
-                    
+
+                    <!-- Postman - Fusée (envoi de requêtes) -->
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M36 12 L20 28"></path>
+                                <path d="M36 12 C36 12, 40 4, 36 4 C32 4, 28 8, 28 8"></path>
+                                <path d="M36 12 C36 12, 44 8, 44 12 C44 16, 40 20, 40 20"></path>
+                                <path d="M20 28 L14 34 L18 38"></path>
+                                <path d="M20 28 L26 34 L22 38"></path>
+                                <circle cx="30" cy="18" r="3"></circle>
                             </svg>
                         </div>
                         <span class="skill-name">Postman</span>
+                    </div>
+
+                    <!-- Docker - Conteneur/boîte empilée (container) -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="6" y="22" width="36" height="18" rx="3"></rect>
+                                <rect x="12" y="10" width="10" height="12"></rect>
+                                <rect x="24" y="10" width="10" height="12"></rect>
+                                <rect x="18" y="2" width="10" height="8"></rect>
+                                <line x1="6" y1="31" x2="42" y2="31"></line>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Docker</span>
+                    </div>
+
+                    <!-- Kubernetes - Roue de gouvernail (helm wheel) -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="24" cy="24" r="18"></circle>
+                                <circle cx="24" cy="24" r="6"></circle>
+                                <line x1="24" y1="6" x2="24" y2="18"></line>
+                                <line x1="24" y1="30" x2="24" y2="42"></line>
+                                <line x1="6" y1="24" x2="18" y2="24"></line>
+                                <line x1="30" y1="24" x2="42" y2="24"></line>
+                                <line x1="11.3" y1="11.3" x2="19.8" y2="19.8"></line>
+                                <line x1="28.2" y1="28.2" x2="36.7" y2="36.7"></line>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Kubernetes</span>
+                    </div>
+
+                    <!-- Prompt Engineering - Cerveau + éclair (AI thinking) -->
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M24 4 C14 4, 6 12, 6 22 C6 28, 10 34, 16 36 L16 42 L32 42 L32 36 C38 34, 42 28, 42 22 C42 12, 34 4, 24 4z">
+                                </path>
+                                <line x1="20" y1="42" x2="20" y2="46"></line>
+                                <line x1="28" y1="42" x2="28" y2="46"></line>
+                                <path d="M20 18 L24 24 L28 18"></path>
+                            </svg>
+                        </div>
+                        <span class="skill-name">Prompt Engineering</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- ============================================
          SECTION: PROJETS
          Structure narrative: Problème > Solution > Tech
@@ -305,38 +452,40 @@
             <h2 class="section-title fade-in">
                 Projets<span class="accent">.</span>
             </h2>
-            
+
             <div class="projects-grid">
                 <!-- Project Card 1 -->
                 <article class="project-card fade-in">
                     <div class="project-header">
                         <h3 class="project-title">Studio Main - E-commerce Burkina Faso</h3>
-                        <a href="https://studio-main-six-mu.vercel.app/" target="_blank" class="project-link" aria-label="Voir le projet">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <a href="https://studio-main-six-mu.vercel.app/" target="_blank" class="project-link"
+                            aria-label="Voir le projet">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
                                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                 <polyline points="15 3 21 3 21 9"></polyline>
                                 <line x1="10" y1="14" x2="21" y2="3"></line>
                             </svg>
                         </a>
                     </div>
-                    
+
                     <div class="project-content">
                         <div class="project-section">
                             <h4 class="project-label">Problème</h4>
                             <p class="project-text">
-                                Les commerçants burkinabè manquent de plateformes locales adaptées à leurs besoins 
+                                Les commerçants burkinabè manquent de plateformes locales adaptées à leurs besoins
                                 pour vendre en ligne de manière simple et sécurisée.
                             </p>
                         </div>
-                        
+
                         <div class="project-section">
                             <h4 class="project-label">Solution</h4>
                             <p class="project-text">
-                                Création d'une plateforme e-commerce complète avec gestion des produits, 
+                                Création d'une plateforme e-commerce complète avec gestion des produits,
                                 panier d'achat, système d'authentification et interface utilisateur moderne.
                             </p>
                         </div>
-                        
+
                         <div class="project-section">
                             <h4 class="project-label">Technologies</h4>
                             <div class="project-tags">
@@ -349,31 +498,31 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <!-- Project Card 2 - Portfolio -->
                 <article class="project-card fade-in">
                     <div class="project-header">
                         <h3 class="project-title">Portfolio Personnel</h3>
                         <span class="project-badge">En cours</span>
                     </div>
-                    
+
                     <div class="project-content">
                         <div class="project-section">
                             <h4 class="project-label">Problème</h4>
                             <p class="project-text">
-                                Besoin d'une vitrine professionnelle pour présenter mes compétences et projets 
+                                Besoin d'une vitrine professionnelle pour présenter mes compétences et projets
                                 de manière moderne et performante.
                             </p>
                         </div>
-                        
+
                         <div class="project-section">
                             <h4 class="project-label">Solution</h4>
                             <p class="project-text">
-                                Portfolio minimaliste avec effet parallaxe subtil, animations fluides et design 
+                                Portfolio minimaliste avec effet parallaxe subtil, animations fluides et design
                                 moderne. Optimisé pour la performance et l'accessibilité.
                             </p>
                         </div>
-                        
+
                         <div class="project-section">
                             <h4 class="project-label">Technologies</h4>
                             <div class="project-tags">
@@ -388,7 +537,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- ============================================
          SECTION: CONTACT
          Conversion-focused avec liens directs
@@ -399,46 +548,54 @@
             <h2 class="section-title fade-in">
                 Contact<span class="accent">.</span>
             </h2>
-            
+
             <div class="contact-content fade-in">
                 <p class="contact-intro">
-                    Vous avez un projet en tête ou simplement envie de discuter ? 
+                    Vous avez un projet en tête ou simplement envie de discuter ?
                     <br>N'hésitez pas à me contacter !
                 </p>
-                
+
                 <div class="contact-links">
                     <!-- Email -->
                     <a href="mailto:ibrahim.antoine@example.com" class="contact-card">
                         <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">Email</span>
-                            <span class="contact-value">ibrahim.antoine@example.com</span>
+                            <span class="contact-value">famatchai226@gmail.com</span>
                         </div>
                     </a>
-                    
+
                     <!-- GitHub -->
-                    <a href="https://github.com/ibrahimantoine" target="_blank" class="contact-card">
+                    <a href="https://github.com/famatchai226" target="_blank" class="contact-card">
                         <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
                             </svg>
                         </div>
                         <div class="contact-info">
                             <span class="contact-label">GitHub</span>
-                            <span class="contact-value">@ibrahimantoine</span>
+                            <span class="contact-value">@famatchai226</span>
                         </div>
                     </a>
-                    
+
                     <!-- LinkedIn -->
                     <a href="https://linkedin.com/in/ibrahim-antoine" target="_blank" class="contact-card">
                         <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
@@ -448,11 +605,27 @@
                             <span class="contact-value">Ibrahim Antoine KY</span>
                         </div>
                     </a>
+
+                    <!-- Téléphone -->
+                    <a href="tel:+22663221284" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Téléphone</span>
+                            <span class="contact-value">+226 63 22 12 84</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- ============================================
          FOOTER
          Minimal et élégant
@@ -464,13 +637,14 @@
                     © 2026 Ibrahim Aboubacar Antoine KY. Tous droits réservés.
                 </p>
                 <p class="footer-signature">
-                    Fait avec <span class="accent">💚</span> et beaucoup de café
+                    Je suis le meilleur choix pour vos projets.
                 </p>
             </div>
         </div>
     </footer>
-    
+
     <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
